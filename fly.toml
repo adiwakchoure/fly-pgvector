@@ -1,9 +1,4 @@
-# fly.toml app configuration file generated for fly-pgvector on 2024-06-18T07:01:46+08:00
-#
-# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
-#
-
-app = 'sortd-pg'
+app = 'sortd-db'
 primary_region = 'cdg'
 
 [build]
@@ -15,7 +10,12 @@ primary_region = 'cdg'
 [http_service]
   internal_port = 8080
   force_https = true
-  auto_stop_machines = true
+  auto_stop_machines = 'stop'
   auto_start_machines = true
   min_machines_running = 0
   processes = ['app']
+
+[[vm]]
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1
