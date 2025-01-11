@@ -3,8 +3,8 @@
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'fly-pgvector'
-primary_region = 'sjc'
+app = 'sorted-fgf'
+primary_region = 'ams'
 
 [build]
 
