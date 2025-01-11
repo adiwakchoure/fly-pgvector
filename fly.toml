@@ -3,8 +3,8 @@
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'sortd-fgf'
-primary_region = 'ams'
+app = 'sortd-pg'
+primary_region = 'cdg'
 
 [build]
 
